@@ -3,16 +3,16 @@ const fs = require("fs");
 const path = require("path");
 
 function copyFromComponentTemplate(type, component) {
-
   const typePath = path.join(__dirname, "../src/", type);
   const basePath = path.join(typePath, component);
+
   if (!fs.existsSync(typePath)) {
     fs.mkdirSync(typePath);
   }
   if (!fs.existsSync(basePath)) {
     fs.mkdirSync(basePath);
   } else {
-    throw new Error('A component with that name already exists');
+    throw new Error('A component with that name already exists.');
   }
   const dir = path.join(__dirname, "./templates/component");
   const files = fs.readdirSync(dir);
@@ -61,7 +61,6 @@ async function generator() {
       copyFromComponentTemplate(componentType, componentName);
     } catch (e) {
       console.error('Error: ', e.message);
-      console.error(e);
     }
   } else {
     console.log('Canceled component creation.')
