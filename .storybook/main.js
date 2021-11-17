@@ -1,3 +1,6 @@
+// import requireContext from 'require-context.macro';
+// const req = requireContext('../src', true, /\.stories\.js$/);
+
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",

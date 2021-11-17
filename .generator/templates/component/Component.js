@@ -1,24 +1,19 @@
 import React from 'react';
-import * as styles from './Component.module.scss';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
+import * as styles from './Component.module.scss';
 
 const cx = classNames.bind(styles);
 
-
-function Component({title}) {
-    return (
-        <div className={cx('container')}>
-
-        </div>
-    );
-}
+const Component = ({ title }) => (
+  <div className={cx('container')}>{title}</div>
+);
 
 Component.defaultProps = {
-    title: ''
-}
+  title: '',
+};
 
 Component.propTypes = {
-    title: PropTypes.string
-}
+  title: PropTypes.string,
+};
 export default Component;
