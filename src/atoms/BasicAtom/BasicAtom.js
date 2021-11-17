@@ -6,7 +6,7 @@ import * as styles from './BasicAtom.module.scss';
 const cx = classNames.bind(styles);
 
 const BasicAtom = ({ title }) => (
-  <div className={cx('container')}><h2>{title}</h2></div>
+  <div className={cx('container')}><h1>{title}</h1></div>
 );
 
 BasicAtom.defaultProps = {

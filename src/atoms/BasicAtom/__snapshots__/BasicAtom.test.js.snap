@@ -5,9 +5,9 @@ exports[`Component render 1`] = `
   <div
     class="container"
   >
-    <h2>
+    <h1>
       example
-    </h2>
+    </h1>
   </div>
 </DocumentFragment>
 `;
