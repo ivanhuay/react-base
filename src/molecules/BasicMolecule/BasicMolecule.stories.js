@@ -7,6 +7,4 @@ export default {
   title: 'molecules/BasicMolecule',
 };
 
-export const Default = function () {
-  return <BasicMolecule>default</BasicMolecule>;
-};
+export const Default = () => <BasicMolecule>default</BasicMolecule>;

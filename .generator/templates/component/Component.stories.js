@@ -7,6 +7,6 @@ export default {
   title: 'ComponentType/Component',
 };
 
-export const Default = function () {
-  return <Component>default</Component>;
+export const Default = () => {
+  return <Component title="Component">default</Component>;
 };
