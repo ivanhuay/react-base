@@ -24,7 +24,8 @@
     "generate": "node .generator/index.js",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -69,7 +70,8 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "loki": "^0.28.1",
     "react-test-renderer": "^17.0.2",
-    "require-context.macro": "^1.2.2"
+    "require-context.macro": "^1.2.2",
+    "husky": "^7.0.0"
   },
   "resolutions": {
     "babel-loader": "8.1.0",
